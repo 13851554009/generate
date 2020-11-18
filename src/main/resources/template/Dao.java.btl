@@ -1,0 +1,75 @@
+package ${package}.${module}.dao;
+
+import java.util.List;
+import ${package}.${module}.entities.${className}Entity;
+import ${package}.${module}.dto.${className}Dto;
+
+/**
+ * ${comments}
+ * @author ${author}
+ */
+public interface ${className}Dao {
+
+    /**
+     * 新增
+     * @param ${objName}
+     * @return
+     */
+	int save${className}(${className}Entity ${objName});
+
+	/**
+     * 新增
+     * @param ${objName}
+     * @return
+     */
+    int insertSelective(${className}Entity ${objName});
+
+    /**
+     * 批量新增
+     * @param items
+     * @return
+     */
+    int batchSave(List<${className}Entity> items);
+
+    /**
+     * 修改
+     * @param ${objName}
+     * @return
+     */
+	int update${className}(${className}Entity ${objName});
+
+	/**
+     * 更新
+     * @param ${objName}
+     * @return
+     */
+    int updateSelective(${className}Entity ${objName});
+
+    /**
+     * 删除
+     * @param ${pk.fieldName}
+     * @return
+     */
+    int remove(${pk.fieldType} ${pk.fieldName});
+
+    /**
+     * 删除
+     * @param ${pk.fieldName}
+     * @return
+     */
+	int batchRemove(${pk.fieldType}[] ${pk.fieldName});
+
+	/**
+     * 根据${pk.fieldName}查询
+     * @param ${pk.fieldName}
+     * @return
+     */
+    ${className}Entity get${className}ById(${pk.fieldType} ${pk.fieldName});
+
+    /**
+     * 分页查询${comments}
+     * @param ${objName}Dto
+     * @return
+     */
+    List<${className}Dto> queryPage(${className}Dto ${objName}Dto);
+}

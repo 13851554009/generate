@@ -1,0 +1,139 @@
+package ${package}.${module}.service.impl;
+
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import ${package}.${module}.dao.${className}Dao;
+import ${package}.${module}.dto.${className}Dto;
+import ${package}.${module}.entities.${className}Entity;
+import ${package}.${module}.service.${className}Service;
+import com.alibaba.dubbo.config.annotation.Service;
+import org.springframework.beans.factory.annotation.Autowired;
+import com.t3.ts.utils.BeanUtils;
+import com.t3.ts.result.Response;
+import com.t3.ts.result.PageResult;
+import java.util.List;
+
+/**
+ * ${comments}
+ * @author ${author}
+ */
+@Service(interfaceClass = ${className}Service.class)
+public class ${className}ServiceImpl implements ${className}Service {
+
+	@Autowired
+    private ${className}Dao ${objName}Dao;
+
+    /**
+     * 新增${comments}
+     * @param ${objName}Dto
+     * @return
+     */
+    @Override
+    public Response add(${className}Dto ${objName}Dto){
+        return null;
+    }
+
+    /**
+     * 新增${comments}
+     * @param ${objName}Dto
+     * @return
+     */
+    @Override
+    public Response edit(${className}Dto ${objName}Dto){
+        return null;
+    }
+
+    /**
+     * 新增${comments}
+     * @param ${objName}Dto
+     * @return
+     */
+    @Override
+    public Response delete(${className}Dto ${objName}Dto){
+        return null;
+    }
+
+    /**
+     * 新增${comments}
+     * @param ${objName}Dto
+     * @return
+     */
+    @Override
+    public Response saveSelective(${className}Dto ${objName}Dto){
+        return null;
+    }
+
+    /**
+     * 批量新增${comments}
+     * @param items
+     * @return
+     */
+    @Override
+    public Response batchSave(List<${className}Dto> items){
+        return null;
+    }
+
+    /**
+     * 更新${comments}
+     * @param ${objName}Dto
+     * @return
+     */
+    @Override
+    public Response updateSelective(${className}Dto ${objName}Dto){
+        return null;
+    }
+
+    /**
+     * 删除${comments}
+     * @param ${pk.fieldName}
+     * @return
+     */
+    @Override
+    public Response remove(${pk.fieldType} ${pk.fieldName}){
+        return null;
+    }
+
+    /**
+     * 批量删除${comments}
+     * @param ${pk.fieldName}
+     * @return
+     */
+    @Override
+    public Response batchRemove(${pk.fieldType}[] ${pk.fieldName}){
+        return null;
+    }
+
+    /**
+     * 根据id查询${comments}
+     * @param ${pk.fieldName}
+     * @return
+     */
+    @Override
+    public Response<${className}Dto> getObjectById(${pk.fieldType} ${pk.fieldName}){
+        ${className}Entity entity = ${objName}Dao.get${className}ById(${pk.fieldName});
+        if (entity != null) {
+            ${className}Dto dto = BeanUtils.propertiesCopy(entity, ${className}Dto.class);
+            return Response.createSuccess("查询成功", dto);
+        }
+        return Response.createSuccess("查询数据为空");
+    }
+
+    /**
+     * 分页查询${comments}
+     * @param ${objName}Dto
+     * @return
+     */
+    @Override
+    public Response<PageResult<${className}Dto>> queryPage(${className}Dto ${objName}Dto, Integer pageNum, Integer pageSize){
+        PageHelper.startPage(pageNum, pageSize, true);
+        List<${className}Dto> list = ${objName}Dao.queryPage(${objName}Dto);
+        //用PageInfo对结果进行包装
+        PageResult<${className}Dto> result = new PageResult<>();
+        PageInfo pageInfo = new PageInfo(list);
+        result.setCurrPage(pageNum);
+        result.setList(list);
+        result.setPageSize(pageSize);
+        result.setTotalCount((int)pageInfo.getTotal());
+        return Response.createSuccess("分页查询${comments}成功",result);
+    }
+}

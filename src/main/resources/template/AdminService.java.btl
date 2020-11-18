@@ -1,0 +1,90 @@
+package com.t3.admin.model.${module}.service;
+
+import com.ccclubs.ts.base.AjaxList;
+import ${package}.${module}.dto.${className}Dto;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * ${comments}
+ * @author ${author}
+ */
+public interface Admin${className}Service {
+
+    /**
+     * 新增${comments}
+     * @param ${objName}
+     * @return AjaxList
+     */
+    AjaxList save(${className}Dto ${objName});
+
+    /**
+     * 新增${comments}
+     * @param paramsMap
+     * @return
+     */
+    AjaxList save(Map<String, Object> paramsMap);
+
+    /**
+     * 批量新增${comments}
+     * @param items
+     * @return
+     */
+    AjaxList batchSave(List<${className}Dto> items);
+
+    /**
+     * 修改${comments}
+     * @param ${objName}
+     * @return
+     */
+    AjaxList update(${className}Dto ${objName});
+
+    /**
+     * 更新${comments}
+     * @param paramsMap
+     * @return
+     */
+    AjaxList update(Map<String, Object> paramsMap);
+
+    /**
+     * 删除${comments}
+     * @param ${pk.fieldName}
+     * @return
+     */
+    AjaxList remove(${pk.fieldType} ${pk.fieldName});
+
+    /**
+     * 批量删除${comments}
+     * @param ${pk.fieldName}
+     * @return
+     */
+    AjaxList batchRemove(${pk.fieldType}[] ${pk.fieldName});
+
+    /**
+     * 根据id查询${comments}
+     * @param ${pk.fieldName}
+     * @return
+     */
+    AjaxList getObjectById(${pk.fieldType} ${pk.fieldName});
+
+    /**
+     * 分页查询${comments}
+     * @param params
+     * @return
+     */
+    AjaxList listForPage(Map<String, Object> params);
+
+    /***
+     * 根据字段组合查询列表
+     * @param paramsMap
+     * @return
+     */
+    AjaxList list(Map<String, Object> paramsMap);
+
+    /**
+     * 统计
+     * @param paramsMap
+     * @return
+     */
+    AjaxList count(Map<String, Object> paramsMap);
+}

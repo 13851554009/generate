@@ -1,0 +1,111 @@
+package ${package}.${module}.dao.impl;
+
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import ${package}.${module}.mappers.${className}Mapper;
+import ${package}.${module}.entities.${className}Entity;
+import ${package}.${module}.dto.${className}Dto;
+import ${package}.${module}.dao.${className}Dao;
+
+/**
+ * ${comments}
+ * @author ${author}
+ */
+@Component
+public class ${className}DaoImpl implements ${className}Dao {
+
+	@Autowired
+	private ${className}Mapper ${objName}Mapper;
+
+    /**
+     * 新增
+     * @param ${objName}
+     * @return
+     */
+	@Override
+	public int save${className}(${className}Entity ${objName}) {
+		return ${objName}Mapper.add(${objName});
+	}
+
+	/**
+     * 新增
+     * @param ${objName}
+     * @return
+     */
+    @Override
+    public int insertSelective(${className}Entity ${objName}){
+        return ${objName}Mapper.insertSelective(${objName});
+    }
+
+    /**
+     * 批量新增
+     * @param items
+     * @return
+    */
+    @Override
+    public int batchSave(List<${className}Entity> items){
+        return ${objName}Mapper.batchSave(items);
+    }
+
+    /**
+     * 修改
+     * @param ${objName}
+     * @return
+     */
+    @Override
+    public int update${className}(${className}Entity ${objName}){
+        return ${objName}Mapper.edit(${objName});
+    }
+
+    /**
+     * 更新
+     * @param ${objName}
+     * @return
+     */
+    @Override
+    public int updateSelective(${className}Entity ${objName}){
+        return ${objName}Mapper.updateSelective(${objName});
+    }
+
+    /**
+     * 删除
+     * @param ${pk.fieldName}
+     * @return
+     */
+    @Override
+    public int remove(${pk.fieldType} ${pk.fieldName}){
+        return ${objName}Mapper.remove(${pk.fieldName});
+    }
+
+    /**
+     * 批量删除
+     * @param ${pk.fieldName}
+     * @return
+     */
+    @Override
+    public int batchRemove(${pk.fieldType}[] ${pk.fieldName}){
+        return ${objName}Mapper.batchRemove(${pk.fieldName});
+    }
+
+    /**
+     * 根据id查询
+     * @param ${pk.fieldName}
+     * @return
+     */
+	@Override
+	public ${className}Entity get${className}ById(${pk.fieldType} ${pk.fieldName}) {
+		return ${objName}Mapper.getObjectById(${pk.fieldName});
+	}
+
+	/**
+     * 分页查询${comments}
+     * @param ${objName}Dto
+     * @return
+     */
+	@Override
+    public List<${className}Dto> queryPage(${className}Dto ${objName}Dto) {
+        return ${objName}Mapper.queryPage(${objName}Dto);
+    }
+
+}

@@ -1,0 +1,36 @@
+
+>squid:S1075„"&Remove this hard-coded path-delimiter.( Ï‰Û
+dsquid:S1192«"LDefine a constant instead of duplicating this literal "servicePath" 8 times.(à¾˜¨
+nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ñƒ‹áùÿÿÿÿ
+ksquid:S1192å"NDefine a constant instead of duplicating this literal "WEB-INF/view/" 3 times.(èàèÎøÿÿÿÿ
+O
+squid:S106T"9Replace this use of System.out or System.err by a logger.(ÕÁ–ù
+O
+squid:S106x"9Replace this use of System.out or System.err by a logger.(š»±ö
+T
+squid:S106}"9Replace this use of System.out or System.err by a logger.(­ñúÇùÿÿÿÿ
+^squid:S1192d"HDefine a constant instead of duplicating this literal "package" 4 times.(ªğğT
+`squid:S1192›"HDefine a constant instead of duplicating this literal "apiPath" 8 times.(¨àŞæ
+T
+squid:S106n"9Replace this use of System.out or System.err by a logger.(×”îØùÿÿÿÿ
+>squid:S1075ˆ"&Remove this hard-coded path-delimiter.(ûéú¶
+csquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(ôüúÿÿÿÿ
+hsquid:S1192ñ"KDefine a constant instead of duplicating this literal "static/js/" 3 times.(ğŠ¿ôùÿÿÿÿ
+hsquid:CommentedOutCodeLineƒ"<This block of commented-out lines of code should be removed.(¾²Ø§úÿÿÿÿ
+Jsquid:S1075‰"&Remove this hard-coded path-delimiter.(˜°ùšÿÿÿÿÿ8õ‹Ö˜Ò-
+T
+squid:S106z"9Replace this use of System.out or System.err by a logger.(È•Òûÿÿÿÿ
+>squid:S1075„"&Remove this hard-coded path-delimiter.( Ï‰Û
+isquid:S1192‹"LDefine a constant instead of duplicating this literal "t3adminPath" 6 times.(Ì½ÚÛÿÿÿÿÿ
+O
+squid:S106i"9Replace this use of System.out or System.err by a logger.(õĞøÃ
+hsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¨É÷8‘¸Ì³ã-
+Ysquid:S00107"<Method has 8 parameters, which is greater than 7 authorized.(ñƒ‹áùÿÿÿÿ
+jsquid:S3776‚"RRefactor this method to reduce its Cognitive Complexity from 62 to the 15 allowed.(¿Ñ¨ø
+Vsquid:S1118":Add a private constructor to hide the implicit public one.(¼„µ…úÿÿÿÿ
+jsquid:S1192Œ"MDefine a constant instead of duplicating this literal "Service.java" 4 times.(ÌÙ¦„ùÿÿÿÿ
+gsquid:S1192B"PDefine a constant instead of duplicating this literal "template/config" 6 times.(æÇª™
+hsquid:S1192”"QDefine a constant instead of duplicating this literal "ServiceImpl.java" 4 times.(Äİ‘
+xsquid:S1488…"`Immediately return this expression instead of assigning it to the temporary variable "basePath".(†ƒˆ–
+>squid:S1075ˆ"&Remove this hard-coded path-delimiter.(ûéú¶
+Bsquid:S1075m"&Remove this hard-coded path-delimiter.(‰¼üûÿÿÿÿ

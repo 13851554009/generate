@@ -1,0 +1,165 @@
+package com.t3.admin.model.${module}.controller;
+
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import com.ccclubs.ts.base.AjaxList;
+import ${package}.${module}.dto.${className}Dto;
+import com.t3.admin.model.${module}.service.Admin${className}Service;
+import com.t3.admin.result.PageResult;
+import com.t3.admin.result.Result;
+import com.t3.admin.utils.json.JSONUtil;
+import com.t3.admin.web.controller.system.AbstractController;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+import java.util.List;
+
+/**
+ * ${comments}
+ * @author ${author}
+ */
+@RestController
+@RequestMapping("/${requestMapping}")
+public class ${className}Controller extends AbstractController {
+	
+	@Autowired
+	private Admin${className}Service ${objName}Service;
+
+    /**
+     * 新增${comments}
+     * @param ${objName}
+     * @return Result
+     */
+    @RequestMapping("/save")
+    public Result save(@RequestBody ${className}Dto ${objName}) {
+        AjaxList ajaxList = ${objName}Service.save(${objName});
+        if (ajaxList.isSuccess()) {
+            return new Result(ajaxList.getMsg());
+        }
+        return new Result(false, "新增数据失败");
+    }
+
+    /**
+     * 修改${comments}
+     * @param ${objName}
+     * @return Result
+     */
+    @RequestMapping("/update")
+    public Result update(@RequestBody ${className}Dto ${objName}) {
+        AjaxList ajaxList = ${objName}Service.update(${objName});
+        if (ajaxList.isSuccess()) {
+            return new Result(ajaxList.getMsg());
+        }
+        return new Result(false, "更新数据失败");
+    }
+
+    /**
+     * 根据条件更新
+     * @param params
+     * @return Result
+     */
+    @RequestMapping("/updateSelective")
+    public Result updateSelective(@RequestBody JSONObject params) {
+        AjaxList ajaxList = ${objName}Service.update(params);
+        if (ajaxList.isSuccess()) {
+            return new Result(ajaxList.getMsg());
+        }
+        return new Result(false, "更新数据失败");
+    }
+
+    /**
+     * 获取单个${comments}
+     * @Description
+     * @param: uuid
+     */
+    @RequestMapping(value = "/remove/{${pk.fieldName}}",method = RequestMethod.GET)
+    public Result remove(@PathVariable("${pk.fieldName}") ${pk.fieldType} ${pk.fieldName}) {
+        if(${pk.fieldName} == null || ${pk.fieldName}.length() == 0) {
+            return new Result(false, "删除数据失败,${pk.fieldName}为空");
+        }
+
+        AjaxList ajaxList = ${objName}Service.remove(${pk.fieldName});
+        if (ajaxList.isSuccess()) {
+            return new Result(ajaxList.getMsg());
+        }
+        return new Result(false, ajaxList.getMsg());
+    }
+
+    /**
+     * 根据uuid批量删除${comments}
+     * @Description:
+     * @param ${pk.fieldName}
+     */
+    @RequestMapping(value="/batchRemove",method=RequestMethod.POST)
+    public Result batchRemove(@RequestBody ${pk.fieldType}[] ${pk.fieldName}) {
+        if(${pk.fieldName} == null || ${pk.fieldName}.length == 0) {
+            return new Result(false, "删除数据失败,${pk.fieldName}为空");
+        }
+
+        AjaxList ajaxList = ${objName}Service.batchRemove(${pk.fieldName});
+        if (ajaxList.isSuccess()) {
+            return new Result(ajaxList.getMsg());
+        }
+        return new Result(false, ajaxList.getMsg());
+    }
+
+    /**
+     * 获取单个${comments}
+     * @Description
+     * @param: uuid
+     */
+    @RequestMapping(value = "/info/{${pk.fieldName}}",method = RequestMethod.GET)
+    public Result info(@PathVariable("${pk.fieldName}") ${pk.fieldType} ${pk.fieldName}) {
+        if(StringUtils.isEmpty(${pk.fieldName})) {
+            new Result(false, "查询数据失败,${pk.fieldName}为空");
+        }
+
+        Result<${className}Dto> result = new Result<${className}Dto>();
+        AjaxList ajaxList = ${objName}Service.getObjectById(${pk.fieldName});
+        if (ajaxList.isSuccess()) {
+            result.setResult((${className}Dto)ajaxList.getData());
+            result.setSuccess(true);
+        }
+        return result;
+    }
+
+    /**
+     * 分页列表
+     * @param params
+     * @return Result
+     */
+    @RequestMapping("/list")
+    public Result listForPage(@RequestBody JSONObject params) {
+        Integer currPage = params.getInteger("currPage");
+        Integer pageSize = params.getInteger("pageSize");
+        params.put("_pageSize", pageSize);
+        params.put("_pageNum", currPage);
+
+        AjaxList ajaxList = ${objName}Service.listForPage(params);
+        logger.info(JSON.toJSONString(ajaxList));
+        if (ajaxList.isSuccess()) {
+            JSONObject data = JSONUtil.toJSONObject(ajaxList.getData());
+            List<${className}Dto> listData = data.getJSONArray("aaData").toJavaList(${className}Dto.class);
+            Integer totalCount = data.getInteger("iTotalDisplayRecords");
+            return new Result(new PageResult(listData, totalCount, pageSize,currPage));
+        }
+        return new Result(false, "查询数据失败");
+    }
+
+    /**
+     * 根据条件查询列表
+     * @param params
+     * @return Result
+     */
+    @RequestMapping("/listByParams")
+    public Result listByParams(@RequestBody JSONObject params) {
+        AjaxList ajaxList = ${objName}Service.list(params);
+        logger.info(JSON.toJSONString(ajaxList));
+
+        Result result = new Result();
+        if (ajaxList.isSuccess()) {
+            result.setResult(ajaxList.getData());
+        }
+        return result;
+    }
+}

@@ -1,0 +1,82 @@
+package ${package}.${module}.service;
+
+import com.t3.ts.result.Response;
+import com.t3.ts.result.PageResult;
+import ${package}.${module}.dto.${className}Dto;
+import java.util.List;
+
+/**
+ * ${comments}
+ * @author ${author}
+ */
+public interface ${className}Service{
+    /**
+     * 新增${comments}
+     * @param ${objName}Dto
+     * @return
+     */
+    Response add(${className}Dto ${objName}Dto);
+
+    /**
+     * 新增${comments}
+     * @param ${objName}Dto
+     * @return
+     */
+    Response edit(${className}Dto ${objName}Dto);
+
+    /**
+     * 新增${comments}
+     * @param ${objName}Dto
+     * @return
+     */
+    Response delete(${className}Dto ${objName}Dto);
+
+    /**
+     * 新增${comments}
+     * @param ${objName}Dto
+     * @return
+     */
+    Response saveSelective(${className}Dto ${objName}Dto);
+
+    /**
+     * 批量新增${comments}
+     * @param items
+     * @return
+     */
+    Response batchSave(List<${className}Dto> items);
+
+    /**
+     * 更新${comments}
+     * @param ${objName}Dto
+     * @return
+     */
+    Response updateSelective(${className}Dto ${objName}Dto);
+
+    /**
+     * 删除${comments}
+     * @param ${pk.fieldName}
+     * @return
+     */
+    Response remove(${pk.fieldType} ${pk.fieldName});
+
+    /**
+     * 批量删除${comments}
+     * @param ${pk.fieldName}
+     * @return
+     */
+    Response batchRemove(${pk.fieldType}[] ${pk.fieldName});
+
+    /**
+     * 根据id查询${comments}
+     * @param ${pk.fieldName}
+     * @return
+     */
+    Response<${className}Dto> getObjectById(${pk.fieldType} ${pk.fieldName});
+
+    /**
+     * 分页查询${comments}
+     * @param ${objName}Dto
+     * @return
+     */
+    Response<PageResult<${className}Dto>> queryPage(${className}Dto ${objName}Dto, Integer pageNum, Integer pageSize);
+}

@@ -1,0 +1,131 @@
+package com.t3.admin.model.${module}.service.impl;
+
+import com.alibaba.dubbo.config.annotation.Reference;
+import com.ccclubs.ts.base.AjaxList;
+import ${package}.${module}.dto.${className}Dto;
+import ${package}.${module}.service.${className}Service;
+import com.t3.admin.model.${module}.service.Admin${className}Service;
+import org.springframework.stereotype.Service;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * ${comments}
+ * @author ${author}
+ */
+@Service
+public class Admin${className}ServiceImpl implements Admin${className}Service {
+
+	@Reference
+    private ${className}Service ${objName}Service;
+
+    /**
+     * 新增${comments}
+     * @param object
+     * @return
+     */
+    @Override
+    public AjaxList save(${className}Dto object) {
+        return ${objName}Service.add(object);
+    }
+
+    /**
+     * 选择字段新增
+     * @param paramsMap
+     * @return
+     */
+    @Override
+    public AjaxList save(Map<String, Object> paramsMap) {
+        return ${objName}Service.saveSelective(paramsMap);
+    }
+
+    /**
+     * 批量新增
+     * @param items
+     * @return
+     */
+    @Override
+    public AjaxList batchSave(List<${className}Dto> items) {
+        return ${objName}Service.batchSave(items);
+    }
+
+    /**
+     * 修改${comments}
+     * @param object
+     * @return
+     */
+    @Override
+    public AjaxList update(${className}Dto object) {
+        return ${objName}Service.edit(object);
+    }
+
+    /**
+     * 选择字段修改
+     * @param paramsMap
+     * @return
+     */
+    @Override
+    public AjaxList update(Map<String, Object> paramsMap) {
+        return ${objName}Service.updateSelective(paramsMap);
+    }
+
+    /**
+     * 删除${comments}
+     * @param ${pk.fieldName}
+     * @return
+     */
+    @Override
+    public AjaxList remove(${pk.fieldType} ${pk.fieldName}) {
+        return ${objName}Service.remove(${pk.fieldName});
+    }
+
+    /**
+     * 批量删除${comments}
+     * @param ${pk.fieldName}
+     * @return
+     */
+    @Override
+    public AjaxList batchRemove(${pk.fieldType}[] ${pk.fieldName}) {
+        return ${objName}Service.batchRemove(${pk.fieldName});
+    }
+
+    /**
+     * 根据ID查询${comments}
+     * @param ${pk.fieldName}
+     * @return
+     */
+    @Override
+    public AjaxList getObjectById(${pk.fieldType} ${pk.fieldName}) {
+        return ${objName}Service.getObjectById(${pk.fieldName});
+    }
+
+    /**
+     * 根据ID查询${comments}
+     * @param paramsMap
+     * @return
+     */
+    @Override
+    public AjaxList listForPage(Map<String, Object> paramsMap) {
+        return ${objName}Service.queryPage(paramsMap);
+    }
+
+    /**
+     * 根据条件查询列表
+     * @param paramsMap
+     * @return
+     */
+    @Override
+    public AjaxList list(Map<String, Object> paramsMap) {
+        return ${objName}Service.list(paramsMap);
+    }
+
+    /**
+     * 根据条件统计
+     * @param paramsMap
+     * @return
+     */
+    @Override
+    public AjaxList count(Map<String, Object> paramsMap) {
+        return ${objName}Service.count(paramsMap);
+    }
+}

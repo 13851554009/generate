@@ -1,0 +1,78 @@
+package ${package}.${module}.mappers;
+
+import com.t3.ts.mapper.BaseMapper;
+import ${package}.${module}.entities.${className}Entity;
+import ${package}.${module}.dto.${className}Dto;
+import java.util.List;
+import org.springframework.stereotype.Repository;
+
+/**
+ * ${comments}
+ * @author ${author}
+ */
+@Repository
+public interface ${className}Mapper extends BaseMapper<${className}Entity, ${pk.fieldType}> {
+    /**
+     * 新增
+     * @param ${objName}
+     * @return
+     */
+    int add(${className}Entity ${objName});
+
+    /**
+     * 新增
+     * @param ${objName}
+     * @return
+     */
+    @Override
+    int insertSelective(${className}Entity ${objName});
+
+    /**
+     * 批量新增
+     * @param items
+     * @return
+     */
+    int batchSave(List<${className}Entity> items);
+
+    /**
+     * 新增
+     * @param ${objName}
+     * @return
+     */
+    int edit(${className}Entity ${objName});
+
+    /**
+     * 更新
+     * @param ${objName}
+     * @return
+     */
+    int updateSelective(${className}Entity ${objName});
+
+    /**
+     * 删除
+     * @param ${pk.fieldName}
+     * @return
+     */
+    int remove(${pk.fieldType} ${pk.fieldName});
+
+    /**
+     * 批量删除
+     * @param ${pk.fieldName}
+     * @return
+     */
+    int batchRemove(${pk.fieldType}[] ${pk.fieldName});
+
+    /**
+     * 根据id查询详情
+     * @param ${pk.fieldName}
+     * @return
+     */
+    ${className}Entity getObjectById(${pk.fieldType} ${pk.fieldName});
+
+    /**
+     * 分页查询${comments}
+     * @param ${objName}Dto
+     * @return
+     */
+    List<${className}Dto> queryPage(${className}Dto ${objName}Dto);
+}

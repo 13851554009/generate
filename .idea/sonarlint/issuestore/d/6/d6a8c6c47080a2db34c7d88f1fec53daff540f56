@@ -1,0 +1,7 @@
+
+asquid:CommentedOutCodeLine$"<This block of commented-out lines of code should be removed.(½âï
+
+lsquid:S11923"PDefine a constant instead of duplicating this literal "template/config" 6 times.(Ÿ¿Ìºþÿÿÿÿ
+^squid:S1192_"HDefine a constant instead of duplicating this literal "package" 3 times.(ªððT
+?squid:S1148y"#Use a logger to log this exception.(Âþÿâûÿÿÿÿ
+Vsquid:S1118":Add a private constructor to hide the implicit public one.(œõòÌÿÿÿÿÿ

@@ -1,0 +1,84 @@
+package ${package}.${module}.entities;
+
+import java.util.Date;
+import com.t3.ts.model.BaseModel;
+<% if(has(hasDecimal) && hasDecimal == true) { %>
+import java.math.BigDecimal;
+<% } %>
+
+/**
+ * ${comments}
+ * @author ${author}
+ */
+public class ${className}Entity extends BaseModel<${pk.fieldType}> {
+
+<% for (column in columns!) { %>
+	/**
+	 * ${column.columnComment}
+	 */
+	private ${column.fieldType} ${column.fieldName};
+	
+<% } %>
+  /**
+   * ${className}Dto constructor
+   */
+	public ${className}Entity() {
+		super();
+	}
+
+<% for (column in columns) { %>
+  /**
+   * setter for ${column.fieldName}
+   * @param ${column.fieldName}
+   */
+ <% if(column.fieldName == 'uuid'
+    || column.fieldName == 'versions'
+    || column.fieldName == 'creator'
+    || column.fieldName == 'createTime'
+    || column.fieldName == 'modifier'
+    || column.fieldName == 'modifyDate'
+    || column.fieldName == 'modifyTime'
+    || column.fieldName == 'updateTime') { %>
+  @Override
+ <%}%>
+	public void set${column.methodName}(${column.fieldType} ${column.fieldName}) {
+		this.${column.fieldName} = ${column.fieldName};
+	}
+
+  /**
+   * getter for ${column.fieldName}
+   */
+<% if(column.fieldName == 'uuid'
+    || column.fieldName == 'versions'
+    || column.fieldName == 'creator'
+    || column.fieldName == 'createTime'
+    || column.fieldName == 'modifier'
+    || column.fieldName == 'modifyDate'
+    || column.fieldName == 'modifyTime'
+    || column.fieldName == 'updateTime') { %>
+  @Override
+ <%}%>
+	public ${column.fieldType} get${column.methodName}() {
+		return ${column.fieldName};
+	}
+
+<% } %>
+    /**
+     * ${className}Dto.toString()
+     */
+    @Override
+    public String toString() {
+        return "${className}Dto{" +
+               <% for (column in columns) { %>
+               <% if (columnLP.first) { %>
+               "${column.fieldName}='" + ${column.fieldName} + '\'' +
+               <% } else { %>
+               ", ${column.fieldName}='" + ${column.fieldName} + '\'' +
+               <% } %>
+               <% if (columnLP.last) { %>
+               '}';
+               <% } %>
+               <% } %>
+    }
+
+}

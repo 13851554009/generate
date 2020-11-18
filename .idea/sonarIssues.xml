@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../driver-resume/driver-resume-provider/src/main/java/com/t3/ts/driver/info/face/ArcSoftFaceJudgeHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../driver-resume/driver-resume-provider/src/main/java/com/t3/ts/driver/info/face/FaceContext.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../driver-resume/driver-resume-provider/src/main/java/com/t3/ts/driver/info/face/FaceProcessor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../driver-resume/driver-resume-provider/src/main/java/com/t3/ts/driver/info/face/FaceProcessorAcrSoft.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../driver-resume/driver-resume-provider/src/main/java/com/t3/ts/driver/info/face/FaceProcessorContext.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../driver-resume/driver-resume-provider/src/main/java/com/t3/ts/driver/info/face/FaceProcessorFaBu.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../driver-resume/driver-resume-provider/src/main/java/com/t3/ts/driver/info/face/listener/ResourceListener.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../driver-resume/driver-resume-provider/src/main/java/com/t3/ts/driver/init/LoadDriverPhotoJudge.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../driver-resume/driver-resume-provider/src/main/java/com/t3/ts/driver/resume/dao/DriverResumeWeixinRefDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../driver-resume/driver-resume-provider/src/main/java/com/t3/ts/driver/resume/dao/DriverWeixinInfoDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../driver-resume/driver-resume-provider/src/main/java/com/t3/ts/driver/resume/entities/DriverResumeWeixinRefEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../driver-resume/driver-resume-provider/src/main/java/com/t3/ts/driver/resume/entities/DriverWeixinInfoEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../driver-resume/driver-resume-provider/src/main/java/com/t3/ts/driver/resume/mappers/DriverResumeWeixinRefMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../driver-resume/driver-resume-provider/src/main/java/com/t3/ts/driver/resume/mappers/DriverWeixinInfoMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../driver-resume/driver-resume-provider/src/main/java/com/t3/ts/driver/resume/service/impl/DriverResumeWeixinRefServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../driver-resume/driver-resume-provider/src/main/java/com/t3/ts/driver/resume/service/impl/DriverWeixinInfoServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../driver-resume/driver-resume-provider/src/main/resources/com/t3/ts/driver/resume/mappers/xml/DriverInfoMapper.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../driver-resume/driver-resume-remote/src/main/java/com/t3/ts/driver/resume/dto/BaseOcrDto.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../driver-resume/driver-resume-remote/src/main/java/com/t3/ts/driver/resume/dto/DriverResumeWeixinRefDto.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../driver-resume/driver-resume-remote/src/main/java/com/t3/ts/driver/resume/service/DriverResumeWeixinRefService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../driver-resume/driver-resume-remote/src/main/java/com/t3/ts/driver/resume/service/DriverWeixinInfoService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/t3/generate/Generator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/template/AdminService.java.btl">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/template/AdminServiceImpl.java.btl">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/template/Controller.java.btl">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/template/Dao.java.btl">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/template/DaoImpl.java.btl">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/template/Dto.java.btl">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/template/Entity.java.btl">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/template/Mapper.java.btl">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/template/Service.java.btl">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/template/ServiceImpl.java.btl">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/template/config.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../resource-manager/resource-manager-provider/src/main/java/com/t3/ts/resource/manager/dao/StoreManagerDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../resource-manager/resource-manager-provider/src/main/java/com/t3/ts/resource/manager/dao/impl/StoreManagerDaoImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../resource-manager/resource-manager-provider/src/main/java/com/t3/ts/resource/manager/mappers/StoreManagerMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../resource-manager/resource-manager-provider/src/main/java/com/t3/ts/resource/manager/service/impl/StoreManagerServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../resource-manager/resource-manager-provider/src/main/resources/com/t3/ts/resource/manager/mappers/xml/StoreManagerMapper.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../resource-manager/resource-manager-remote/src/main/java/com/t3/ts/resource/manager/dto/StoreManagerDto.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../resource-manager/resource-manager-remote/src/main/java/com/t3/ts/resource/manager/dto/StoreRoomAreaDto.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../resource-manager/resource-manager-remote/src/main/java/com/t3/ts/resource/manager/dto/StoreRoomDto.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../resource-manager/resource-manager-remote/src/main/java/com/t3/ts/resource/manager/service/DeviceManagerService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../resource-manager/resource-manager-remote/src/main/java/com/t3/ts/resource/manager/service/StoreManagerService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/app/game/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/app/game/src/main/java/com/fs/game/dao/VehicleBrandDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/app/game/src/main/java/com/fs/game/dao/impl/VehicleBrandDaoImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/app/game/src/main/java/com/fs/game/entities/VehicleBrandEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/app/game/src/main/java/com/fs/game/enums/BaseEnumInterface.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/app/game/src/main/java/com/fs/game/enums/BussiEnum.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/app/game/src/main/java/com/fs/game/mappers/VehicleBrandMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/app/game/src/main/java/com/fs/game/mappers/VehicleBrandMapper.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/app/game/src/main/java/com/fs/game/model/BaseMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/app/game/src/main/java/com/fs/game/model/BaseModel.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/app/game/src/main/java/com/fs/game/result/PageResult.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/app/game/src/main/java/com/fs/game/result/Response.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/app/game/src/main/java/com/fs/game/service/VehicleBrandService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/app/game/src/main/java/com/fs/game/service/impl/VehicleBrandServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/app/game/src/main/resources/application.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/app/work/Leaf/leaf-server/src/main/resources/leaf.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/app/workspace/demo-service/demo-provider/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/app/workspace/demo-service/demo-provider/src/main/java/com/t27/ts/demo/entities/LeafAllocEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/app/workspace/demo-service/demo-provider/src/main/java/com/t27/ts/demo/mappers/LeafAllocMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/app/workspace/demo-service/demo-provider/src/main/java/com/t27/ts/demo/service/impl/LeafAllocServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/app/workspace/demo-service/demo-remote/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/app/workspace/demo-service/demo-remote/src/main/java/com/t27/ts/demo/service/LeafAllocService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/app/workspace/t27-parent/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
